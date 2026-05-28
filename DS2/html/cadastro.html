@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <h1>Stonks-Finance</h1>
+            <p>Faça parte da nossa comunidade</p>
+            <img src="../imagens/img_login.png">
+
+
+            <form id="form-cadastro">
+                <div class="input-group">
+                    <input type="email" placeholder="E-mail" id="email" required>
+
+                    <input type="text" placeholder="Telefone" id="tel" maxlength="15" required>
+
+                    <input type="text" placeholder="CPF" id="cpf" maxlength="14" required>
+
+                    <div class="senha-box">
+                        <input type="password" placeholder="Crie uma senha" id="senha" required>
+                        <i class="fa-solid fa-eye" onclick="toggleSenha('senha', this)"></i>
+                    </div>
+
+                </div>
+
+                <button type="submit">CADASTRAR</button>
+            </form>
+
+            <div class="footer-link">
+                Já tem uma conta? <a href="login.html">Faça seu login</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sucesso" class="modal-overlay">
+        <div class="modal-content" style="text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="80" height="80" style="margin-bottom: 20px;">
+                <circle cx="256" cy="256" r="220" fill="none" stroke="#4CD964" stroke-width="32"/>
+                <path d="M150 260 l70 70 l140 -140" fill="none" stroke="#4CD964" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h2>Cadastro realizado com sucesso!</h2>
+            <p>Redirecionando para login...</p>
+        </div>
+    </div>
+
+ <script src="../js/cadastro.js"></script>
+
+</body>
+</html>

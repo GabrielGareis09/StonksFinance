@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>StonksFinance - Metas</title>
+
+  <link rel="stylesheet" href="../css/metas.css" />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div>
+
+        <!-- LOGO -->
+        <div class="logo-area">
+
+          <div class="logo-icon">
+            <i class="fas fa-wallet"></i>
+          </div>
+
+          <div>
+
+            <h2 class="logo-title">
+              StonksFinance
+            </h2>
+
+            <p class="logo-subtitle">
+              Controle Financeiro
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- MENU -->
+        <nav class="sidebar-nav">
+
+          <a
+            href="principal.html"
+            class="sidebar-link"
+          >
+
+            <i class="fas fa-house"></i>
+
+            <span>
+              Principal
+            </span>
+
+          </a>
+
+          <a
+            href="transacoes.html"
+            class="sidebar-link"
+          >
+
+            <i class="fas fa-arrow-right-arrow-left"></i>
+
+            <span>
+              Transações
+            </span>
+
+          </a>
+
+          <a
+            href="metas.html"
+            class="sidebar-link active"
+          >
+
+            <i class="fas fa-bullseye"></i>
+
+            <span>
+              Metas
+            </span>
+
+          </a>
+
+        </nav>
+
+      </div>
+
+      <!-- PERFIL -->
+      <div class="sidebar-bottom">
+
+        <div class="user-card">
+
+          <img
+            src="../imagens/perfil.png"
+            alt="Foto do usuário"
+          >
+
+          <div>
+
+            <h6>
+              Gareis Silva
+            </h6>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+      <!-- HERO -->
+      <header class="hero">
+
+        <div class="hero-content">
+
+          <h1>
+            Suas Metas Financeiras
+          </h1>
+
+          <p>
+            Acompanhe sua evolução e alcance seus objetivos
+          </p>
+
+        </div>
+
+      </header>
+
+      <!-- CONTENT -->
+      <section class="container-fluid content-area">
+
+        <!-- CARDS -->
+        <div class="cards-grid">
+
+          <div class="goal-summary">
+
+            <h3 id="totalGoals">
+              3
+            </h3>
+
+            <p>
+              Metas Ativas
+            </p>
+
+          </div>
+
+          <div class="goal-summary">
+
+            <h3>
+              R$ 14.500
+            </h3>
+
+            <p>
+              Total Guardado
+            </p>
+
+          </div>
+
+          <div class="goal-summary">
+
+            <h3>
+              78%
+            </h3>
+
+            <p>
+              Progresso Médio
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- ADD META -->
+        <section class="add-goal-section">
+
+          <div class="section-title">
+
+            <h3>
+              Adicionar Nova Meta
+            </h3>
+
+          </div>
+
+          <form id="goalForm">
+
+            <div class="row g-4">
+
+              <div class="col-md-4">
+
+                <label class="form-label">
+                  Nome da Meta
+                </label>
+
+                <input
+                  type="text"
+                  id="goalName"
+                  class="form-control"
+                  placeholder="Ex: Comprar Carro"
+                  required
+                >
+
+              </div>
+
+              <div class="col-md-3">
+
+                <label class="form-label">
+                  Valor da Meta
+                </label>
+
+                <input
+                  type="number"
+                  id="goalValue"
+                  class="form-control"
+                  placeholder="R$ 0,00"
+                  required
+                >
+
+              </div>
+
+              <div class="col-md-3">
+
+                <label class="form-label">
+                  Valor Guardado
+                </label>
+
+                <input
+                  type="number"
+                  id="goalSaved"
+                  class="form-control"
+                  placeholder="R$ 0,00"
+                  required
+                >
+
+              </div>
+
+              <div class="col-md-2">
+
+                <label class="form-label">
+                  Ícone
+                </label>
+
+                <select
+                  id="goalIcon"
+                  class="form-select"
+                >
+
+                  <option value="fa-car">
+                    Carro
+                  </option>
+
+                  <option value="fa-plane">
+                    Viagem
+                  </option>
+
+                  <option value="fa-laptop">
+                    Notebook
+                  </option>
+
+                  <option value="fa-house">
+                    Casa
+                  </option>
+
+                  <option value="fa-mobile-screen">
+                    Celular
+                  </option>
+
+                </select>
+
+              </div>
+
+              <div class="col-12">
+
+                <button
+                  type="submit"
+                  class="add-goal-btn"
+                >
+
+                  <i class="fas fa-plus"></i>
+
+                  Adicionar Meta
+
+                </button>
+
+              </div>
+
+            </div>
+
+          </form>
+
+        </section>
+
+        <!-- METAS -->
+        <section class="goals-section">
+
+          <div class="section-title">
+
+            <h3>
+              Minhas Metas
+            </h3>
+
+          </div>
+
+          <div id="goalsContainer">
+
+            <!-- META -->
+            <div class="goal-card">
+
+              <div class="goal-top">
+
+                <div>
+
+                  <h5>
+                    Comprar Notebook Gamer
+                  </h5>
+
+                  <span>
+                    Objetivo: R$ 8.000
+                  </span>
+
+                </div>
+
+                <div class="goal-icon">
+
+                  <i class="fas fa-laptop"></i>
+
+                </div>
+
+              </div>
+
+              <div class="progress-area">
+
+                <div class="progress">
+
+                  <div
+                    class="progress-bar"
+                    style="width: 65%;"
+                  ></div>
+
+                </div>
+
+                <div class="progress-info">
+
+                  <span>
+                    R$ 5.200 guardados
+                  </span>
+
+                  <span>
+                    65%
+                  </span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <p>
+      © 2026 StonksFinance • Todos os direitos reservados
+    </p>
+
+    <p>
+      Política de Privacidade • Termos de Uso
+    </p>
+
+    <p>
+      suporte@stonksfinance.com.br
+    </p>
+
+  </footer>
+
+  <script src="../js/metas.js"></script>
+</body>
+
+</html>

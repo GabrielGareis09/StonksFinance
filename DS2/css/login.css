@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.card {
+    background-color: white;
+    width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 25px 95px rgba(5, 255, 18, 0.705);
+    text-align: center;
+}
+
+.logo-area img {
+    width: 170px;
+    margin-bottom: 15px;
+}
+
+.logo-area h1 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.logo-area p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #f0f0f0;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+input:focus {
+    background-color: white;
+    border-color: rgba(5, 255, 18, 0.705);
+}
+
+.senha-box {
+    text-align: start;
+    position: relative;
+    width: 100%;
+}
+
+.senha-box input {
+    width: 100%;
+    padding-right: 45px;
+}
+
+.senha-box i {
+    position: absolute;
+    right: 15px;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+    font-size: 18px;
+}
+
+
+.erro {
+    color: #ff3333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: none;
+}
+
+button {
+    background-color: #3a3c3c;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+button:hover {
+    background-color: #242525;
+    transition: 0.3;
+}
+
+.footer-link {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.footer-link a {
+    color: #0000ff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+}

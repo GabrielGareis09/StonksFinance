@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <style>
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .modal-content h2 {
+            color: #28a745;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .modal-content p {
+            color: #555555;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="logo-area">
+                <img src="../imagens/img_login.png" alt="imagem login">
+                <h1>Faça seu login</h1>
+                <p>Bem-vindo de volta</p>
+            </div>
+
+            <div class="erro" id="erro-login"></div>
+
+            <form id="form-login">
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="E-mail" required>
+                    <div class="senha-box">
+                        <input type="password" placeholder="Insira sua senha" id="senha" required>
+                        <i class="fa-solid fa-eye" onclick="toggleSenha('senha', this)"></i>
+                    </div>
+                </div>
+
+                <button id="btn-entrar" type="submit" style="width: 100%;">Entrar</button>
+            </form>
+
+            <div class="footer-link">
+                Não tem uma conta? <a href="cadastro.html">Faça seu cadastro</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="modal-sucesso" class="modal-overlay">
+        <div class="modal-content" style="text-align: center;">
+            <!-- Ícone SVG de Confirmação -->
+            <svg xmlns="http://w3.org" viewBox="0 0 512 512" width="80" height="80" style="margin-bottom: 20px;">
+                <circle cx="256" cy="256" r="220" fill="none" stroke="#4CD964" stroke-width="32"/>
+                <path d="M150 260 l70 70 l140 -140" fill="none" stroke="#4CD964" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+            <h2>Login realizado com sucesso!</h2>
+            <p>Redirecionando para suas transações...</p>
+        </div>
+    </div>
+
+
+    <script src="../js/login.js"></script>
+</body>
+</html>
