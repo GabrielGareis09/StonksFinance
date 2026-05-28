@@ -1,9 +1,5 @@
 # 📈 StonksFinance — Sistema de Gestão de Finanças Pessoais
 
-![GitHub repo size](https://img.shields.io/github/repo-size/seu-usuario/stonks-finance?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/seu-usuario/stonks-finance?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/seu-usuario/stonks-finance?style=for-the-badge)
-
 O **StonksFinance** é uma aplicação web completa e responsiva para controlo financeiro pessoal. O projeto permite que os utilizadores monitorizem as suas receitas e despesas quotidianas, estabeleçam e acompanhem metas financeiras de longo prazo, de forma totalmente segura e visualmente amigável.
 
 Este repositório é fruto de um **processo rigoroso de engenharia reversa e refatoração de software**. Recebemos uma base de código legada que apresentava graves falhas de arquitetura, brechas de segurança, erros críticos de lógica e problemas severos de UI/UX, e transformámo-la num produto estável, limpo e profissional.
