@@ -16,19 +16,21 @@ body {
 .card {
     background-color: white;
     width: 450px;
-    height: 93vh;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 25px 95px rgba(5, 255, 18, 0.705);
+    box-shadow: 0 25px 95px #2081ff;
     text-align: center;
 }
 
 .card h1 {
     margin-bottom: 10px;
+    color: #333;
 }
 
 .card p {
     margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #777;
 }
 
 img {
@@ -55,7 +57,7 @@ input {
 
 input:focus {
     background-color: white;
-    border-color: rgba(5, 255, 18, 0.705);
+    border-color: #2592eb;;
 }
 
 .senha-box {
@@ -104,13 +106,15 @@ a {
 }
 
 .footer-link a {
-    color: #0000ff;
+    color: #0051ff;
     text-decoration: none;
     font-weight: 700;
 }
 
 .footer-link a:hover {
-    text-decoration: underline;
+    color: #030374;
+    transition: 0.3s;
+    
 }
 
 .modal-overlay {

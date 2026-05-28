@@ -175,9 +175,7 @@ body {
   transition: 0.4s ease;
 }
 
-.hero:hover {
-  transform: scale(1.01);
-}
+
 
 .hero-top {
   display: flex;
